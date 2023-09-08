@@ -37,7 +37,6 @@ class PaginaRegistro(FormView):
         return super(PaginaRegistro, self).get(*args, **kwargs)
 
 
-# Create your views here.
 class ListaPendientes(LoginRequiredMixin, ListView):
     model = Tarea
     context_object_name = 'tareas'
